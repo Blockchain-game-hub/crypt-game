@@ -6,6 +6,7 @@ import TitleHomeFrame from '@/components/TitleHomeFrame'
 import logoExtra from '@/public/logoExtra.svg';
 import listType from '@/public/listType.svg';
 import Image from 'next/image';
+
 const Market = () => {
 
     const refListItem = useRef();

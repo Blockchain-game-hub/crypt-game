@@ -14,7 +14,6 @@ const Banner = ({}) => {
 
     return (
         <div className={styles.banner}>
-            {/* <div className={styles.bannerBackground}></div> */}
             <div className={styles.bannerContent}>
                 <div className='container'>
                     <div className={styles.bannerTitle}>
