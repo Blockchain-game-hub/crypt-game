@@ -5,6 +5,23 @@ body {
   font-family: Rajdhani, sans-serif; 
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: #110F30;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+
+}
+
+
+
 @font-face {
   font-family: "Rajdhani";
   src: url("../public/Rajdhani/Rajdhani-Medium.ttf");
