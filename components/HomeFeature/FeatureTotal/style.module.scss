@@ -1,0 +1,13 @@
+@import '@/styles/base.scss';
+
+.featureTotal {
+    padding: 14rem 12rem;
+    background-color: #1C1D55;
+    .listFeature {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9rem;
+       
+    }
+
+}

@@ -1,0 +1,56 @@
+@import '@/styles/base.scss';
+
+.featureCharacters {
+    padding: 8rem 0;
+    background-color: #171744;
+    .featureContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .featureTitle {
+            margin-bottom: 2.5rem;
+        }
+        .featureDesc {
+            max-width: 50%;
+            margin: 2rem auto;
+            text-align: center;
+        }
+    }
+    .listCharacters {
+        margin-top: 24rem;
+        .charactersLeft {
+            background-image: url('../../../public/bgCharacters.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            height: 442px;
+            
+        }
+        .bgRight {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .charactersRight {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 15%;
+            & > div > div {
+                background-size: contain;
+                max-width: 20rem;
+                min-width: 16rem;
+                min-height: 26rem;
+                max-height: 28rem;
+                margin-right: 2rem;
+              
+            }
+        }
+    }
+   
+}

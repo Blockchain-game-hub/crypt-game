@@ -1,0 +1,40 @@
+@import '@/styles/base.scss';
+
+.gameRoad {
+    padding: 7rem 0;
+    background-image: url('../../../public/bgGameRoad.png');
+
+    .listGameRoad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+        justify-items: center;
+        margin-top: 4rem;
+        .gameRoadItem {
+            background-color: #263698;
+            border-radius: 2rem;
+            width: fit-content;
+            padding: 6.7rem 1.2rem 3rem 1.4rem;
+            position: relative;
+            overflow: hidden;
+            .bgGameRoad {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            ul {
+                padding-left: 0;
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2.5rem;
+                    font-family: Poppins;
+                    & > div {
+                        margin-right: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

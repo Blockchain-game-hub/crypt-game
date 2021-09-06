@@ -1,0 +1,191 @@
+
+.primaryBtn {
+    transition: all 0.2s ease-in-out 0s;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 6.1rem;
+    padding: 16px 99px 15px 63px;
+    background: linear-gradient(270deg, #2782EA 0%, #5FA9F0 100%);
+    color: var(--text-color);
+    height: auto;
+    width: fit-content;
+    & > div {
+        margin-left: 1.2rem !important;
+    }
+}
+.primaryBtn:hover {
+    background-position: 100% 0;
+    background: linear-gradient(270deg, #2782EA 100%, #5FA9F0 0%);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    color: var(--text-color);
+}
+.secondaryButton {
+   display: inline-flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    background-color: rgb(32, 129, 226);
+    border: 1px solid rgb(32, 129, 226);
+    color: rgb(255, 255, 255);
+    height: auto;
+}
+
+.secondaryButton:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 104, 183);
+}
+
+.overlay {
+    width: 100%;
+    z-index: 50;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 72px;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+
+.headingSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--lighten-background);
+    margin-bottom: 2rem;
+    .viewAll {
+        color: rgba(255,255,255,0.75);
+        font-weight: 500;
+        font-size: 1.7rem;
+        cursor: pointer;
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+}
+
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gridFour {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gridFive {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.gridSix {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.textInline {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin text-gradient {
+    background: -webkit-linear-gradient(180deg, #C09645 7.5%, #FFC977 53.75%, #C09645 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featureContent {
+    .featureExtraTitle {
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        line-height: 4.6rem;
+    }
+    .featureDesc {
+        font-family: Poppins;
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    .primaryBtn {
+        margin-top: 1rem;
+    }
+}
+
+.featureTitle {
+    background:  -webkit-linear-gradient(90deg, #4472D7 -14.12%, #537EE3 32.87%, #9769B7 75.88%, #FB73AE 112.94%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 3.6rem;
+   text-align: center;
+   letter-spacing: 0.3rem;
+}
+
+.gameRoadItem {
+    background-color: #263698;
+    border-radius: 2rem;
+    width: fit-content;
+    padding: 6.7rem 1.2rem 3rem 1.4rem;
+    position: relative;
+    overflow: hidden;
+    .bgGameRoad {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-family: Poppins;
+            & > div {
+                margin-right: 2rem !important;
+            }
+        }
+    }
+}
+
+.gridThree{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gridFour {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

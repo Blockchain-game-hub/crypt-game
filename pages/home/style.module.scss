@@ -1,0 +1,36 @@
+@import '@/styles/base.scss';
+
+.home {
+    :global {
+        .ant-tabs-nav {
+            background: #4943B742;
+            margin-bottom: 0 !important;
+            &::before {
+                border-bottom: none !important;
+            }
+        }
+        .ant-tabs-tab  {
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.8rem;
+            &:hover {
+                @include text-gradient;
+            }
+        }
+      
+        .ant-tabs-tab-active {
+            border-bottom: 2px solid var(--yellow-color) !important;
+            z-index: 2;
+            .ant-tabs-tab-btn {
+                @include text-gradient;
+                color: inherit;
+                text-shadow: none;
+            }
+        }
+        .ant-tabs-nav-list {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+   
+}

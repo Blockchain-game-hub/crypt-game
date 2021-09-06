@@ -1,0 +1,66 @@
+@import '@/styles/base.scss';
+
+.nav {
+    background: #110F30;
+    padding: 0 1.6rem !important;
+    height: 10rem;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    z-index: 100;
+    @media (max-width: 768px) {
+        .navRight {
+            background-color: var(--background-color);
+            padding-bottom: 2rem;
+        }
+        :global {
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                left: 0px;
+                right: 0px;
+            }
+        }
+    }
+  
+    :global {
+        .navbar-collapse {
+            flex-grow: 21;
+        }
+    }
+
+    .navRight {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        @media (max-width: 768px) {
+            padding: 2rem 0;
+        }
+        a {
+            transition: all 0.2s ease 0s;
+            text-transform: capitalize;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: 0 3rem !important;
+            color: rgba(255, 255, 255, 0.95) !important;
+            position: relative;
+            & > div {
+                position: absolute;
+                top: 50%;
+                opacity: 0;
+                transition: all 0.2s ease 0s;
+                height: 2rem;
+                width: 10rem;
+            }
+            &:hover {
+                @include text-gradient;
+                > div {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

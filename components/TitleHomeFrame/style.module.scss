@@ -1,0 +1,35 @@
+@import '@/styles/base.scss';
+
+.mainHeader {
+    position: relative;
+    transform: translateY(-65%);
+    display: flex;
+    justify-content: center;
+   
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titleFrameInner {
+            position: absolute;
+            top: 0;
+            left: 0.5rem;
+            right: 0.5rem;
+        }
+        h3 {
+            position: absolute;
+            @include text-gradient;
+            font-weight: bold;
+            margin-bottom: 0;
+            font-size: 3.8rem;
+        }
+    }
+}
+.headerExtra {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    z-index: -1;
+}

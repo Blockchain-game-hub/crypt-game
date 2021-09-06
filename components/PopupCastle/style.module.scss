@@ -1,0 +1,83 @@
+@import '@/styles/base.scss';
+
+.character {
+    background-color:  var(--dark-color);
+    padding-bottom: 2rem;
+    .header {
+        background: url('../../public/framePopup.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 0 0.7rem;
+        .innerHeader {
+            background: url('../../public/frameInnerPopup.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 1.7rem 2rem;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+            @include text-gradient;
+        }
+        h5 {
+            color: #423D34;
+            font-size: 1.6rem;
+        }
+    }
+    .detail {
+        padding: 2.3rem 2.3rem 1rem 2.3rem;
+
+        .detailImg {
+
+        }
+        ul {
+            padding: 3rem 0 0 0;
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0.4rem;
+                .symbol {
+                    display: flex;
+                    align-items: center;
+                    & > div {
+                        margin-right: 1rem !important;
+                    }
+                    span {
+                        color: #7694FF;
+                        font-weight: bold;
+                    }
+                }
+                & > div:last-child {
+                    color: #90CC54;
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;   
+        justify-content: center;
+        & > div {
+            background: url('../../public/borderAction.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--yellow-color);
+            background-color: #0F1D2A;
+            padding: 1rem 2rem;
+            box-shadow: 0px 4px 30px 0px #00000080 inset;
+        }
+        & > div:first-child {
+            margin-right: 2rem;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+@import '@/styles/base.scss';
+
+.featureGame {
+    padding: 8rem 0;
+    background-color: #171744;
+    .featureContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .featureTitle {
+            margin-bottom: 2.5rem;
+        }
+    }
+   
+}
